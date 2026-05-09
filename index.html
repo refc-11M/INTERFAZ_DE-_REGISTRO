@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro de Usuario</title>
+
+  <!-- Archivo CSS externo -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Registro de Usuario</h1>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <section class="registro-container">
+
+      <!-- Imagen de perfil -->
+      <div class="perfil">
+        <img 
+          src="https://via.placeholder.com/150"
+          alt="Imagen de perfil"
+        >
+      </div>
+
+      <!-- Formulario -->
+      <form>
+
+        <!-- Nombre -->
+        <div>
+          <label for="nombre">Nombre completo</label>
+          <input 
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Ingresa tu nombre"
+            required
+          >
+        </div>
+
+        <!-- Correo -->
+        <div>
+          <label for="correo">Correo electrónico</label>
+          <input 
+            type="email"
+            id="correo"
+            name="correo"
+            placeholder="ejemplo@correo.com"
+            required
+          >
+        </div>
+
+        <!-- Contraseña -->
+        <div>
+          <label for="password">Contraseña</label>
+          <input 
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Mínimo 8 caracteres"
+            minlength="8"
+            required
+          >
+        </div>
+
+        <!-- Fecha -->
+        <div>
+          <label for="fecha">Fecha de nacimiento</label>
+          <input 
+            type="date"
+            id="fecha"
+            name="fecha"
+            required
+          >
+        </div>
+
+        <!-- País -->
+        <div>
+          <label for="pais">País</label>
+
+          <input 
+            list="paises"
+            id="pais"
+            name="pais"
+            placeholder="Selecciona tu país"
+            required
+          >
+
+          <datalist id="paises">
+            <option value="México">
+            <option value="Argentina">
+            <option value="Colombia">
+            <option value="Chile">
+            <option value="España">
+            <option value="Perú">
+          </datalist>
+        </div>
+
+        <!-- Color favorito -->
+        <div>
+          <label for="color">Color favorito</label>
+
+          <div class="color-container">
+            <input 
+              type="color"
+              id="color"
+              name="color"
+              value="#2563eb"
+            >
+          </div>
+        </div>
+
+        <!-- Botón -->
+        <button type="submit">Registrarse</button>
+
+      </form>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Registro de Usuario</p>
+  </footer>
+
+</body>
+</html>
